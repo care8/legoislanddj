@@ -25,15 +25,6 @@
     polygon {
       fill: black;
     }
-
-    /* inverted state */
-    body.inverted {
-      background: black;
-    }
-
-    body.inverted polygon {
-      fill: white;
-    }
   </style>
 </head>
 
@@ -50,8 +41,28 @@
 </svg>
 
 <script>
+  function randomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return 'rgb(' + r + ',' + g + ',' + b + ')';
+  }
+
+  const polygons = document.querySelectorAll('polygon');
+
   document.body.addEventListener('click', function () {
-    document.body.classList.toggle('inverted');
+    let bgColor = randomColor();
+    let starColor = randomColor();
+
+    // make sure the two colors are not identical
+    while (starColor === bgColor) {
+      starColor = randomColor();
+    }
+
+    document.body.style.background = bgColor;
+    polygons.forEach(function (p) {
+      p.style.fill = starColor;
+    });
   });
 </script>
 
