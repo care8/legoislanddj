@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>lego island dj</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    svg {
+      width: 100vw;
+      height: 100vh;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1374.82 435.84" preserveAspectRatio="none">
+  <g>
+    <polygon points="229.14 0 283.23 166.48 458.27 166.48 316.66 269.37 370.75 435.84 229.14 332.95 87.52 435.84 141.61 269.37 0 166.48 175.04 166.48 229.14 0"/>
+    
+    <polygon points="687.41 0 741.5 166.48 916.55 166.48 774.93 269.37 829.02 435.84 687.41 332.95 545.79 435.84 599.89 269.37 458.27 166.48 633.32 166.48 687.41 0"/>
+    
+    <polygon points="1145.68 0 1199.77 166.48 1374.82 166.48 1233.2 269.37 1287.3 435.84 1145.68 332.95 1004.07 435.84 1058.16 269.37 916.55 166.48 1091.59 166.48 1145.68 0"/>
+  </g>
+</svg>
+
+</body>
+</html>
